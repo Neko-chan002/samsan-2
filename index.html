@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Samsan</title>
+    <link rel="icon" href="Resource/IMG/Don't cry.png" type="image/png" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#121212] text-[#ffffff] min-h-screen flex flex-col p-4">
+    
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 rounded-2xl max-w-7xl w-full mx-auto flex items-center justify-between px-4 py-0 backdrop-blur-xs bg-[#00000096] transition-colors duration-300 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] mt-0 mb-0 ">
+      <div class="flex items-center gap-3">
+        <img src="Resource/IMG/Don't cry.png" alt="Logo icon" class="w-16 h-16 rounded-full" />
+        <span class="text-[#ffb700] font-semibold text-lg select-none">Neko-chan</span>
+      </div>
+      <button id="menuBtn" class="text-white text-2xl md:hidden hover:text-[#ffb700]" aria-label="Toggle menu">
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </button>
+      <div class="hidden md:flex gap-8 text-xs font-semibold ">
+        <a href="index.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">About</a>
+        <a href="2.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Resume</a>
+        <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Projek</a>
+        <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Contact</a>
+      </div>
+    </nav>
+
+    <!-- nav buat hp -->
+    <div id="mobileMenu" class="sticky top-[63px] z-40 bg-[#00000096] rounded-b-2xl max-w-7xl w-full mx-auto px-6 py-4 md:hidden hidden shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] backdrop-blur-xs">
+      <nav class="flex flex-col gap-4 text-xs font-semibold">
+        <a href="index.html" class="text-[#ffb700] border-l-4 border-[#ffb700] pl-3">About</a>
+        <a href="2.html" class="text-[#ffffff] hover:text-[#ffb700] transition">Resume</a>
+        <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] transition">Projek</a>
+        <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] transition">Contact</a>
+      </nav>
+    </div>
+
+    <!-- main container -->
+    <main class="max-w-7xl w-full flex flex-col md:flex-row gap-6 md:gap-10 mt-6 mx-auto">
+      
+      <!-- id card -->
+      <section class="bg-[#0e4affc9] rounded-2xl p-6 md:p-8 w-full md:w-[360px] white-shadow flex flex-col justify-between shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]  md:h-[400px]">
+        <div>
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-gray-700 rounded flex justify-center items-center">
+            <img src="Resource/IMG/1..png" alt="Avatar" class="w-12 h-12 rounded-lg" /></div>
+            <div>
+              <h2 class="text-white font-semibold text-sm leading-5">Samsan</h2>
+              <p class="bg-[#2a2a2a] text-[10px] text-[#fff200] rounded px-2 py-[2px] w-max mt-1">Web developer</p>
+            </div>
+            <button id="toggleProfileBtn" class="ml-auto text-[#ffffff] hover:text-[#ffffff] md:hidden" aria-label="Toggle profile info">
+              <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+              <i class="fas fa-chevron-down" id="toggleIcon text-2xl"></i></div>
+            </button>
+          </div>
+
+          <div id="profileInfo" class="space-y-6 text-xs md:block hidden ">
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+              <i class="far fa-envelope text-[#ffffff]"></i></div>
+              <div>
+                <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Email</p>
+                <p class="text-[#ffffff]">samsans217@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                <i class="fas fa-phone-alt text-[#ffffff]"></i>
+              </div>
+              <div>
+                <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Phone</p>
+                <p>+62 831 9597 6559</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+              <i class="far fa-calendar-alt text-[#ffffff]"></i></div>
+              <div>
+                <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Birthday</p>
+                <p>02 Desember 2004</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+              <i class="fas fa-map-marker-alt text-[#ffffff]"></i></div>
+              <div>
+                <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Location</p>
+                <p>Kp. Pasirgaru RT 02 RW 04</p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex gap-16 text-[#ffffff] justify-center md:justify-start">
+              <a href="#" class="hover:text-[#fff200]"><i class="fab fa-facebook-f text-2xl"></i></a>
+              <a href="#" class="hover:text-[#fff200]"><i class="fab fa-whatsapp text-2xl"></i></a>
+              <a href="#" class="hover:text-[#fff200]"><i class="fab fa-instagram text-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section class="bg-[#0e4affc9] rounded-2xl p-6 md:p-8 w-full max-w-4xl white-shadow flex flex-col gap-6 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]">
+        <div>
+          <h3 class="text-[#000000] font-semibold text-lg mb-2 text-[20px]">About Me
+            <span class="block w-20 h-0.5 bg-[#ffb700] mt-1 rounded-sm"></span>
+          </h3>
+          <p class="text-[12px] text-[#ffffff] leading-5 mb-6">
+            Namaku Samsan, mahasiswa semester empat di Universitas Al-Ghifari. Kehidupan kampusku jauh dari kata membosankan. Aku bukan tipe mahasiswa yang hanya berfokus pada kuliah dan tugas-tugas akademik. Aku haus akan pengalaman, tantangan, dan hal-hal baru yang merangsang pikiran. Itulah sebabnya aku bergabung dengan bootcamp Himatif (ini singkatan dari Himpunan Mahasiswa Informatika), sebuah komunitas mahasiswa yang fokus pada pengembangan diri dan inovasi teknologi.Kreativitas adalah kunci bagiku. Aku percaya bahwa dengan kreativitas, kita bisa menciptakan solusi inovatif untuk berbagai masalah. Aku sering menghabiskan waktu luangku untuk bereksperimen dengan berbagai teknologi baru, mencoba membuat program kecil, atau mendesain website sederhana. 
+          </p>
+          <p class="text-[12px] text-[#ffffff] leading-5">
+            Masa depan masih terasa samar. Aku masih belum tahu pasti apa yang ingin aku lakukan setelah lulus kuliah. Namun, aku optimis dan yakin akan menemukan jalan yang tepat. Pengalaman di bootcamp Himatif dan berbagai kegiatan kemahasiswaan lainnya telah membentukku menjadi pribadi yang lebih percaya diri, tangguh, dan siap menghadapi tantangan di masa depan. Aku percaya bahwa perjalanan ini akan membawaku ke tempat yang tepat.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-[#000000] font-semibold text-sm mb-2 text-[20px]">Apa yang Saya Lakukan</h4>
+          <span class="block w-38 h-0.5 bg-[#ffb700] rounded-sm"></span>
+          <br>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[10px]">
+            <!-- jika ingin menambah  -->
+            <div class="bg-[#292929] rounded-lg p-4 flex gap-4 items-start white-shadow shadow-[0_0_5px_2px_rgba(255,255,255,0.3)]">
+              <img src="Resource/IMG/6.png" alt="Web Design" class="w-8 h-8" />
+              <div>
+                <h5 class="text-[#d1b15e] font-semibold mb-1 text-xs">Web Design</h5>
+                <p class="text-[#ffffff] leading-4">Saya menciptakan situs web yang menggabungkan keindahan estetika dengan fungsionalitas yang sempurna. Desain yang memikat mata dipadukan dengan navigasi yang intuitif, menghasilkan pengalaman pengguna yang tak terlupakan.</p>
+              </div>
+            </div>
+            <!-- apa yang di kerjakan -->
+            <div class="bg-[#292929] rounded-lg p-4 flex gap-4 items-start shadow-[0_0_5px_2px_rgba(255,255,255,0.3)]">
+              <img src="Resource/IMG/5.png" alt="Web Development" class="w-8 h-8" />
+              <div>
+                <h5 class="text-[#d1b15e] font-semibold mb-1 text-xs">Web Development</h5>
+                <p class="text-[#ffffff] leading-4">Pengembangan situs web profesional dengan kualitas tinggi. Saya menggabungkan teknologi terkini dan keahlian saya untuk menciptakan situs web yang andal, cepat, dan mudah digunakan.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#292929] rounded-lg p-4 flex gap-4 items-start shadow-[0_0_5px_2px_rgba(255,255,255,0.3)]">
+              <img src="Resource/IMG/7.png" alt="Mobile Apps" class="w-8 h-8" />
+              <div>
+                <h5 class="text-[#d1b15e] font-semibold mb-1 text-xs">UI/UX</h5>
+                <p class="text-[#ffffff] leading-4">Proses desain UI/UX yang terstruktur dan iteratif. Dari riset hingga pengujian, saya memastikan setiap detail dirancang untuk pengalaman pengguna terbaik.</p>
+              </div>
+            </div>
+
+            <div class="bg-[#292929] rounded-lg p-4 flex gap-4 items-start shadow-[0_0_5px_2px_rgba(255,255,255,0.3)]">
+              <img src="Resource/IMG/4.png" alt="Photography" class="w-8 h-8" />
+              <div>
+                <h5 class="text-[#d1b15e] font-semibold mb-1 text-xs">Story Design</h5>
+                <p class="text-[#ffffff] leading-4">Kreativitas dan strategi bertemu dalam desain story saya. Saya menciptakan visual yang menarik dan narasi yang kuat untuk menyampaikan pesan dengan cara yang unik dan berkesan.</p>
+              </div>
+            </div>
+          </div>
+            <!-- bagian skil  -->
+            <div>
+              <h2 class="text-lg font-bold mb-1 mt-6 text-black">My Skills</h2>
+              <span class="block w-20 h-0.5 bg-[#ffb700] mt-1 rounded-sm mb-4"></span>
+            <div class="max-w-[850px] w-full bg-[#222222] rounded-lg p-6 space-y-6 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]">
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between mb-1 text-sm font-semibold">
+                    <span>Web Design</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-gray-700">
+                    <div class="h-2 rounded-full bg-yellow-400" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1 text-sm font-semibold">
+                    <span>UI/UX</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-gray-700">
+                    <div class="h-2 rounded-full bg-yellow-400" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1 text-sm font-semibold">
+                    <span>Database</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-gray-700">
+                    <div class="h-2 rounded-full bg-yellow-400" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between mb-1 text-sm font-semibold">
+                    <span>JAVA</span>
+                    <span>50%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-gray-700">
+                    <div class="h-2 rounded-full bg-yellow-400" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+          </div>
+        </div>
+  </main>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js">
+
+    </script>
+
+  </body>
+</html>

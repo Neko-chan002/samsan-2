@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Samsan</title>
+    <link rel="icon" href="Resource/IMG/Don't cry.png" type="image/png" />
+    <link href="src/output.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+    font-family: 'Inter', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-[#121212] text-[#ffffff] min-h-screen flex flex-col p-4">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 rounded-2xl max-w-7xl w-full mx-auto flex items-center justify-between px-4 py-0 backdrop-blur-xs bg-[#00000096] transition-colors duration-300 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] mt-0 mb-0 ">
+        <div class="flex items-center gap-3">
+          <img src="Resource/IMG/Don't cry.png" alt="Logo icon" class="w-16 h-16 rounded-full" />
+          <span class="text-[#ffb700] font-semibold text-lg select-none">Neko-chan</span>
+        </div>
+        <button id="menuBtn" class="text-white text-2xl md:hidden hover:text-[#ffb700]" aria-label="Toggle menu">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </button>
+        <div class="hidden md:flex gap-8 text-xs font-semibold ">
+          <a href="index.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">About</a>
+          <a href="2.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">Resume</a>
+          <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Projek</a>
+          <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Contact</a>
+        </div>
+      </nav>
+  
+      <!-- nav buat hp -->
+      <div id="mobileMenu" class="sticky top-[63px] z-40 bg-[#00000096] rounded-b-2xl max-w-7xl w-full mx-auto px-6 py-4 md:hidden hidden shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] backdrop-blur-xs">
+        <nav class="flex flex-col gap-4 text-xs font-semibold">
+          <a href="index.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">About</a>
+          <a href="2.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">Resume</a>
+          <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] transition">Projek</a>
+          <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] transition">Contact</a>
+        </nav>
+      </div>
+
+      <!-- main container -->
+    <main class="max-w-7xl w-full flex flex-col md:flex-row gap-6 md:gap-10 mt-6 mx-auto">
+      
+        <!-- id card -->
+        <section class="bg-[#0e4affc9] rounded-2xl p-6 md:p-8 w-full md:w-[360px] white-shadow flex flex-col justify-between shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]  md:h-[400px]">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-14 h-14 bg-gray-700 rounded flex justify-center items-center">
+              <img src="Resource/IMG/1..png" alt="Avatar" class="w-12 h-12 rounded-lg" /></div>
+              <div>
+                <h2 class="text-white font-semibold text-sm leading-5">Samsan</h2>
+                <p class="bg-[#2a2a2a] text-[10px] text-[#fff200] rounded px-2 py-[2px] w-max mt-1">Web developer</p>
+              </div>
+              <button id="toggleProfileBtn" class="ml-auto text-[#ffffff] hover:text-[#ffffff] md:hidden" aria-label="Toggle profile info">
+                <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                <i class="fas fa-chevron-down" id="toggleIcon text-2xl"></i></div>
+              </button>
+            </div>
+  
+            <div id="profileInfo" class="space-y-6 text-xs md:block hidden ">
+  
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                <i class="far fa-envelope text-[#ffffff]"></i></div>
+                <div>
+                  <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Email</p>
+                  <p class="text-[#ffffff]">samsans217@gmail.com</p>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                  <i class="fas fa-phone-alt text-[#ffffff]"></i>
+                </div>
+                <div>
+                  <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Phone</p>
+                  <p>+62 831 9597 6559</p>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                <i class="far fa-calendar-alt text-[#ffffff]"></i></div>
+                <div>
+                  <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Birthday</p>
+                  <p>02 Desember 2004</p>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gray-700 rounded flex justify-center items-center">
+                <i class="fas fa-map-marker-alt text-[#ffffff]"></i></div>
+                <div>
+                  <p class="uppercase text-[8px] text-[#fff200] font-semibold tracking-widest">Location</p>
+                  <p>Kp. Pasirgaru RT 02 RW 04</p>
+                </div>
+              </div>
+  
+              <div class="mt-8 flex gap-16 text-[#ffffff] justify-center md:justify-start">
+                <a href="#" class="hover:text-[#fff200]"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="#" class="hover:text-[#fff200]"><i class="fab fa-whatsapp text-2xl"></i></a>
+                <a href="#" class="hover:text-[#fff200]"><i class="fab fa-instagram text-2xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-[#0e4affc9] rounded-2xl p-6 md:p-8 w-full max-w-4xl white-shadow flex flex-col gap-6 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]">
+
+            <h3 class="text-[#000000] font-semibold text-lg mb-2 text-[20px]">Serjalanan Sekolah                <span class="block w-36 h-0.5 bg-[#ffb700] mt-1 rounded-sm"></span>
+              </h3>
+              <article class="max-w-3xl mx-auto" data-page="resume">
+                <!-- Education Section -->
+                <section class="mb-8 timeline">
+                  <div class="flex items-center gap-4 mb-6 title-wrapper">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-md bg-[#2a2a2a]">
+                      <ion-icon name="book-outline" class="text-[#f5a623] text-2xl"></ion-icon>
+                    </div>
+                    <h3 class=" text-black text-xl font-semibold select-none">Education</h3>
+                  </div>
+            
+                  <ol class="ml-12 space-y-5 timeline-list text-sm sm:text-base">
+                    <!-- Item 1 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">SDN PAMALAYAN 5</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">20011 — 2017</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Llus dengan tepat waktu dan tidak ada catatan jelek walapun hanya massuk peringkat 6 dari 15 murid
+                      </p>
+                    </li>
+            
+                    <!-- Item 2 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">SMP IT PURNAM</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">20017 — 20020</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Mulai pengembangan diri dan hanya mendapatkan pelajaran hidup yang berharag
+                      </p>
+                    </li>
+            
+                    <!-- Item 3 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">MAN 4 GARUT</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">2020 — 2023</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Lulus dengan murid teladan dan mendapatkan gelar anggota osis terbaik
+                      </p>.
+                    </li>
+
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">AL-GHIFARI</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">20023 — SEKARANG</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Mungkin sekarang masih pokus pada dunia kuliah belum terjun ke sana sini hanya ikut organisai dan mengikuti seminar
+                      </p>
+                    </li>
+                  </ol>
+
+
+                </section>
+            
+                <!-- Experience Section -->
+                <section class="mb-8 timeline">
+                  <div class="flex items-center gap-4 mb-6 title-wrapper">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-md bg-[#2a2a2a]">
+                      <ion-icon name="book-outline" class="text-[#f5a623] text-2xl"></ion-icon>
+                    </div>
+                    <h3 class="text-black text-xl font-semibold select-none">Experience</h3>
+                  </div>
+            
+                  <ol class="ml-12 space-y-5 timeline-list text-sm sm:text-base">
+                    <!-- Item 1 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">Creative director</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">2023</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Bisa masuk kuliah dengan lancara dan mendapatkan beasiswa full
+                      </p>
+                    </li>
+            
+                    <!-- Item 2 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">Art director</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">SELANJUTNYA</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        BELUM MENDAPATKAN PENGALAMAN LAIN NYA SELAIN DARI KEGIATAN DI KAMPUS 
+                      </p>
+                    </li>
+            
+                    <!-- Item 3 -->
+                    <li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">Art director</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">Selanjutnya</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Belum mendapatkan pengalaman lain selain ikutan webainar pelatin di DLH dan ya ifen lain di kampusa saja. 
+                      </p>
+                    </li><li class="relative timeline-item pl-8">
+                      <span class="absolute top-0 left-0 w-1 h-full bg-[#2a2a2a] -translate-x-1/2"></span>
+                      <span class="absolute top-2 left-0 w-3 h-3 rounded-full bg-[#f5a623] shadow-[0_0_0_4px_#2a2a2a] -translate-x-1/2"></span>
+                      <h4 class="font-semibold mb-1 timeline-item-title select-none">Art director</h4>
+                      <span class="text-[#c5a900] font-normal block mb-1">SELANJUTNYA</span>
+                      <p class="text-[#ffffff] font-light leading-relaxed timeline-text">
+                        Belum mendapatkan pengalaman lain selain ikutan webainar pelatin di DLH dan ya ifen lain di kampusa saja. 
+                      </p>
+                    </li>
+                  </ol>
+                </section>
+    </main>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
