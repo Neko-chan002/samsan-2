@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Samsan</title>
-    <link href="src/output.css" rel="stylesheet" />
     <link rel="icon" href="Resource/IMG/Don't cry.png" type="image/png" />
+    <link href="src/output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -15,11 +15,10 @@
       }
     </style>
   </head>
-
   <body class="bg-[#121212] text-[#ffffff] min-h-screen flex flex-col p-4">
-
+    
     <!-- Navbar -->
-    <nav class="sticky top-0 z-50 rounded-2xl max-w-7xl w-full mx-auto flex items-center justify-between px-4 py-0 backdrop-blur-xs bg-[#00000096] transition-colors duration-300 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)]">
+    <nav class="sticky top-0 z-50 rounded-2xl max-w-7xl w-full mx-auto flex items-center justify-between px-4 py-0 backdrop-blur-xs bg-[#00000096] transition-colors duration-300 shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] mt-0 mb-0 ">
       <div class="flex items-center gap-3">
         <img src="Resource/IMG/Don't cry.png" alt="Logo icon" class="w-16 h-16 rounded-full" />
         <span class="text-[#ffb700] font-semibold text-lg select-none">Neko-chan</span>
@@ -27,21 +26,21 @@
       <button id="menuBtn" class="text-white text-2xl md:hidden hover:text-[#ffb700]" aria-label="Toggle menu">
         <a href="#"><i class="fas fa-bars"></i></a>
       </button>
-      <div class="hidden md:flex gap-8 text-xs font-semibold">
-        <a href="index.html" class="text-[#ffffff] hover:text-[#ffb700] transition">About</a>
+      <div class="hidden md:flex gap-8 text-xs font-semibold ">
+        <a href="index.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">About</a>
         <a href="2.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Resume</a>
         <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Projek</a>
-        <a href="4.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">Contact</a>
+        <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] pb-1 transition">Contact</a>
       </div>
     </nav>
 
-    <!-- Mobile Nav -->
+    <!-- nav buat hp -->
     <div id="mobileMenu" class="sticky top-[63px] z-40 bg-[#00000096] rounded-b-2xl max-w-7xl w-full mx-auto px-6 py-4 md:hidden hidden shadow-[0_0_10px_2px_rgba(255,255,255,0.3)] backdrop-blur-xs">
       <nav class="flex flex-col gap-4 text-xs font-semibold">
-        <a href="index.html" class="text-[#ffffff] hover:text-[#ffb700] transition">About</a>
+        <a href="index.html" class="text-[#ffb700] border-l-4 border-[#ffb700] pl-3">About</a>
         <a href="2.html" class="text-[#ffffff] hover:text-[#ffb700] transition">Resume</a>
         <a href="3.HTML" class="text-[#ffffff] hover:text-[#ffb700] transition">Projek</a>
-        <a href="4.html" class="text-[#ffae00] border-b-2 border-[#ffb700] pb-1">Contact</a>
+        <a href="4.html" class="text-[#ffffff] hover:text-[#ffb700] transition">Contact</a>
       </nav>
     </div>
 
@@ -150,11 +149,11 @@
             <textarea name="message" placeholder="Your Message" required rows="5"
               class="bg-gray-950 border border-[#2a2a2a] rounded-xl px-5 py-3 text-gray-300 placeholder-gray-500 text-sm font-medium resize-y focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 w-full h-[300px]"></textarea>
 
-            <button type="submit" disabled
-            class="flex items-center justify-center gap-2 bg-gradient-to-r from-[#030303] to-[#44464a] rounded-xl px-6 py-5 text-xs font-semibold shadow-md transition-colors duration-300 disabled:opacity-70 disabled:cursor-not-allowed hover:from-yellow-400 hover:to-yellow-300 ml-[670px]">
-              <span class="text-fuchsia-600 ">Send Message</span>
-              <i class="fas fa-paper-plane icon text-green-500"></i>
-            </button>
+              <button type="submit" disabled
+                class="flex items-center justify-center gap-2 bg-gradient-to-r from-[#030303] to-[#44464a] rounded-xl px-6 py-5 text-xs font-semibold shadow-md transition-colors duration-300 disabled:opacity-70 disabled:cursor-not-allowed hover:from-yellow-400 hover:to-yellow-300 ml-0 md:ml-[670px]">
+                <span class="text-fuchsia-600">Send Message</span>
+                <i class="fas fa-paper-plane icon text-green-500"></i>
+              </button>
           </form>
         </section>
       </section>
